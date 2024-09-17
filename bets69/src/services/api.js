@@ -3,7 +3,7 @@ import { getToken } from '../utils/auth';
 
 // Criação da instância do Axios
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api', // Substitua pela URL correta da sua API
+  baseURL: 'http://localhost:3000/api', 
 });
 
 // Interceptor para adicionar o token JWT em todas as requisições

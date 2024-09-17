@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #f8f1f0; /* Fundo claro similar ao da Home */
+  background-color: #f8f1f0; 
   min-height: 100vh;
   width: 100%;
 }
@@ -17,7 +17,7 @@
 
 .app-header h1 {
   font-size: 26px;
-  color: #2d3e50; /* Cor do texto similar ao da Home */
+  color: #2d3e50; 
 }
 
 .app-buttons {
@@ -45,7 +45,7 @@
 }
 
 .register-button {
-  background-color: #3498db; /* Cor de fundo para o botão de registro */
+  background-color: #3498db; 
 }
 
 .register-button:hover {
