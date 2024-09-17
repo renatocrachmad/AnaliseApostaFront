@@ -1,13 +1,64 @@
+/* Estilo geral do container de login */
 .login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  input {
-    margin: 10px 0;
-    padding: 10px;
-    width: 250px;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f4f8; /* Fundo claro */
+  min-height: 100vh;
+  width: 100%;
+}
+
+.login-container input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container button {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:nth-of-type(1) {
+  background-color: #27ae60; /* Botão de visualizar senha */
+}
+
+.login-container button:nth-of-type(1):hover {
+  background-color: #1e8449; /* Cor de hover para visualizar senha */
+}
+
+.login-container button:nth-of-type(2) {
+  background-color: #3498db; /* Botão de entrar */
+}
+
+.login-container button:nth-of-type(2):hover {
+  background-color: #2980b9; /* Cor de hover para entrar */
+}
+
+.login-container button:nth-of-type(3) {
+  background-color: #e74c3c; /* Botão de cadastrar-se */
+}
+
+.login-container button:nth-of-type(3):hover {
+  background-color: #c0392b; /* Cor de hover para cadastrar-se */
+}
+
+.login-container label {
+  font-size: 14px;
+  margin: 10px 0;
+}

@@ -1,111 +1,117 @@
 /* Estilos gerais da Home */
 .home-container {
-    font-family: 'Arial', sans-serif;
-    display: flex;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f4f8; /* Fundo claro */
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Estilo do Cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 15px;
+  background-color: #2d3e50; /* Fundo do cabeçalho */
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+/* Seções de Apostas e Eventos */
+.bets-section,
+.events-section {
+  width: 100%;
+  max-width: 1200px;
+  background-color: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bets-section h2,
+.events-section h2 {
+  color: #2d3e50;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Lista de Apostas e Eventos */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 18px;
+  color: #34495e;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.add-bet-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.add-bet-button:hover {
+  background-color: #1e8449;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #f0f4f8; /* Fundo claro */
   }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    padding: 10px;
-    background-color: #2d3e50; /* Cabeçalho com cor escura */
-    color: #fff;
-    border-radius: 8px;
-  }
-  
-  .header h1 {
-    font-size: 24px;
-  }
-  
-  .logout-button {
-    background-color: #e74c3c; /* Cor do botão de logout */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .logout-button:hover {
-    background-color: #c0392b; /* Hover do botão de logout */
-  }
-  
-  /* Seções de Apostas e Eventos */
-  .bets-section,
+
+  .bets-section, 
   .events-section {
     width: 100%;
-    max-width: 1200px;
-    background-color: white;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
   }
-  
-  .bets-section h2,
-  .events-section h2 {
-    color: #2d3e50;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  
-  /* Lista de Apostas e Eventos */
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #dcdcdc;
-    font-size: 18px;
-    color: #34495e;
-  }
-  
-  ul li:last-child {
-    border-bottom: none;
-  }
-  
+
   .add-bet-button {
-    background-color: #27ae60; /* Botão para adicionar aposta */
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s;
+    width: 100%;
+    font-size: 16px;
   }
-  
-  .add-bet-button:hover {
-    background-color: #1e8449; /* Hover para o botão de adicionar aposta */
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .bets-section, 
-    .events-section {
-      width: 100%;
-      padding: 15px;
-    }
-  
-    .add-bet-button {
-      width: 100%;
-      font-size: 16px;
-    }
-  }
-  
+}
