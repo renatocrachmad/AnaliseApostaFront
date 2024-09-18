@@ -32,12 +32,9 @@
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.register-container button {
-  background-color: #27ae60; /* Botão de salvar */
+  background-color: #D2691E; /* Botão de salvar */
 }
 
 .register-container button:hover {
-  background-color: #1e8449; /* Cor de hover para salvar */
+  background-color: #8B4513; /* Cor de hover para salvar */
 }

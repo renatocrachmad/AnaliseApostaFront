@@ -1,23 +1,22 @@
 /* Estilos gerais da página App */
 .app-container {
   font-family: 'Roboto', sans-serif;
+  background-color:#D3D3D3;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
-  background-color: #f8f1f0; 
-  min-height: 100vh;
-  width: 100%;
+  align-items: center;
+  height: 100vh; /* Ocupa 100% da altura da viewport */
+  margin: 0;
 }
 
 .app-header {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .app-header h1 {
   font-size: 26px;
-  color: #2d3e50; 
+  color: #2d3e50;
 }
 
 .app-buttons {
@@ -29,7 +28,7 @@
 
 .login-button,
 .register-button {
-  background-color: #27ae60;
+  background-color: #1fc78f;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -41,11 +40,11 @@
 
 .login-button:hover,
 .register-button:hover {
-  background-color: #1e8449;
+  background-color: #e1e4e2;
 }
 
 .register-button {
-  background-color: #3498db; 
+  background-color: #3498db;
 }
 
 .register-button:hover {

@@ -1,67 +1,112 @@
-/* Estilos gerais da página App */
-.app-container {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #f8f1f0; /* Fundo claro similar ao da Home */
-  min-height: 100vh;
-  width: 100%;
-}
-
-.app-header {
-  margin-bottom: 20px;
-}
-
-.app-header h1 {
-  font-size: 26px;
-  color: #2d3e50; /* Cor do texto similar ao da Home */
-}
-
-.app-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.login-button,
-.register-button {
-  background-color: #27ae60;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-size: 18px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.login-button:hover,
-.register-button:hover {
-  background-color: #1e8449;
-}
-
-.register-button {
-  background-color: #3498db; /* Cor de fundo para o botão de registro */
-}
-
-.register-button:hover {
-  background-color: #2980b9;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .app-buttons {
+/* Estilos gerais da página Home */
+.home-container {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F8FF;
+    padding: 20px;
+    min-height: 100vh; /* Garante que a página ocupe a altura total */
+    display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
   }
-
-  .login-button,
-  .register-button {
-    width: 100%;
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #D2691E;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .header h1 {
+    font-size: 26px;
+  }
+  
+  .logout-button {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
     font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
-}
+  
+  .logout-button:hover {
+    background-color: #D2691E;
+  }
+  
+  .bets-section, .events-section {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bets-section h2, .events-section h2 {
+    font-size: 22px;
+    color: #2d3e50;
+    margin-bottom: 10px;
+  }
+  
+  .bets-section ul, .events-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .bets-section li, .events-section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .add-bet-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    align-self: center;
+  }
+  
+  .add-bet-button:hover {
+    background-color: #1e8449;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 10px;
+    }
+  
+    .header h1 {
+      font-size: 22px;
+    }
+  
+    .logout-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .bets-section h2, .events-section h2 {
+      font-size: 20px;
+    }
+  
+    .bets-section li, .events-section li {
+      font-size: 16px;
+    }
+  
+    .add-bet-button {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  

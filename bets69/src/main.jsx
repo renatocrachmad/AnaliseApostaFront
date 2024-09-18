@@ -5,7 +5,10 @@ import App from './App';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
+import Aposta from './components/Aposta';
 import './index.css';
+import Carteira from './components/Carteira';
+import EventoEsportivo from './components/EventoEsportivo';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
@@ -14,6 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/apostas" element={<Aposta />} />
+      <Route path="/carteira" element={<Carteira />} />
+      <Route path="/eventoEsportivo" element={<EventoEsportivo />} />
     </Routes>
   </Router>
 );
