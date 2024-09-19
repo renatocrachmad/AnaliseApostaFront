@@ -9,6 +9,11 @@ import Aposta from './components/Aposta';
 import './index.css';
 import Carteira from './components/Carteira';
 import EventoEsportivo from './components/EventoEsportivo';
+import Jogo from './components/Jogo';
+import Notificacoes from './components/Notificacoes';
+import Promocoes from './components/Promocoes';
+import TipoAposta from './components/TipoAposta';
+import TransacaoFinanceira from './components/TransacaoFinanceira';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
@@ -20,6 +25,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/apostas" element={<Aposta />} />
       <Route path="/carteira" element={<Carteira />} />
       <Route path="/eventoEsportivo" element={<EventoEsportivo />} />
+      <Route path="/jogo" element={<Jogo />} />
+      <Route path="/notificacoes" element={<Notificacoes />} />
+      <Route path="/promocoes" element={<Promocoes />} />
+      <Route path="/tipoAposta" element={<TipoAposta />} />
+      <Route path="/transacaoFinanceira" element={<TransacaoFinanceira />} />
     </Routes>
   </Router>
 );
